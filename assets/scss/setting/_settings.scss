@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+//=====================================
+// カラーバリエーション
+//=====================================
+
+$color-default:   #111;
+$color-link:      #0068b7;
+
+$color-black:     #000;
+$color-white:     #FFF;
+$color-gray:      #CCC;
+
+$color-primary:   #0068b7;
+$color-secondary: #ccc;
+$color-info:      #ccc;
+$color-error:     #D90000;
+$color-workflow:  #EFEFEF;
+$color-wactive:   #000;
+$color-submit:    #FF8000;
+
+//=====================================
+// 背景カラー
+//=====================================
+
+$bg-default: #FFF;
+
+//=====================================
+// レイアウトの幅、高さ
+//=====================================
+
+$wide: 1190px;
+
+//=====================================
+// メディアタイプ
+//=====================================
+
+$media-types: (
+  default: 'print, screen and (min-width: 961px)',
+  xxs: 'only screen and (max-width: 340px)',
+  xs: 'only screen and (max-width: 480px)',
+  sm:  'only screen and (max-width: 767px)',
+  sm-md:  'only screen and (max-width: 960px)',
+  md:  'only screen and (min-width: 768px) and (max-width: 960px)',
+  md-lg:  'only screen and (min-width: 768px)',
+  lg:  'print, screen and (min-width: 961px)',
+  xl: 'print, screen and (min-width: 1367px)',
+  retina: 'screen and (-webkit-min-device-pixel-ratio: 2)',
+  print: 'print',
+
+  sp: 'only screen and (max-width: 767px)',
+  pc: 'print, screen and (min-width: 768px)'
+);
+
+$medias: pc, sp;
+
+//=====================================
+// フォント
+//=====================================
+
+$ja_go:   'GenJyuuGothicL', '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$ja_yu:   '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$ja_min:  '游明朝' , 'Yu Mincho' , '游明朝体' , 'YuMincho', 'HG明朝B', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS 明朝', serif;
+$ja_maru: 'ヒラギノ丸ゴ Pro W4','Hiragino maru Gothic Pro','HG丸ｺﾞｼｯｸM-PRO','Verdana','Osaka',sans-serif;
+$oswald:  'Oswald', sans-serif;
+
+//=====================================
+// ボーダー
+//=====================================
+$border-default: 1px solid #CCC;

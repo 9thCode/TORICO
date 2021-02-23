@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+.input-required{
+  background-color: #FEE;
+  &.valid{
+    background-color: #FFF;
+  }
+}
+
+.group-required{
+  label{
+    background-color: #FEE;
+  }
+  &.valid{
+    label{
+      background-color: #EFEFEF;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+textarea,
+select{
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 13px 10px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  &:focus{
+    background-color: lighten(#FFEFBF,8);
+    box-shadow: 0 0 3px rgba(#73B9FF,0.8);
+  }
+}
+
+textarea{
+  height: 12em;
+}
+
+.color-required{
+  color: red;
+}
+
+//
+// Input
+//
+
+.input-full{
+  width: 100%;
+}
+
+.input-long{
+  @include media(md-lg){
+    width: 30em;
+  }
+  @include media(sm){
+    width: 100%;
+  }
+}
+
+.input-medium{
+  @include media(md-lg){
+    width: 20em;
+  }
+  @include media(sm){
+    width: 100%;
+  }
+}
+
+.input-short{
+  @include media(md-lg){
+    width: 10em;
+  }
+  @include media(sm){
+    width: 6em;
+  }
+}
+
+label{
+  display: inline-block;
+  padding: 8px 12px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  @include media(sm){
+    padding: 10px 12px;
+    border-radius: 5px;
+    padding-left: 12px;
+  }
+  &:before, &:after{
+    // transition: all 0.2s linear;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    content: "";
+    @include media(sm){
+      left: 20px;
+    }
+  }
+  &:before{
+    background-color: #FFF;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"]{
+    opacity: 0;
+    &.checked{
+      @include media(sm){
+        background-color: #FFEFBF;
+      }
+      &:after{
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+
+.label-checkbox{
+  &:before{
+    height: 16px;
+    width: 16px;
+    margin-top: -10px;
+    border: 2px solid #BBB;
+  }
+  &:after{
+    box-sizing: border-box;
+    height: 10px;
+    width: 17px;
+    opacity: 0;
+    margin-top: -7px;
+    border-left: 4px solid $color-primary;
+    border-bottom: 4px solid $color-primary;
+  }
+
+  &.checked{
+    &:after{
+      height: 10px;
+      width: 17px;
+      border-bottom: 4px solid $color-primary !important;
+      border-left: 4px solid $color-primary !important;
+      transform: rotate(-45deg) !important;
+      opacity: 1 !important;
+    }
+  }
+}

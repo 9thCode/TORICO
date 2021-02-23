@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  box-sizing: border-box;
+  font-family: inherit;
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-primary{
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  color: #FFF;
+  transition: all ease 0.15s 0.1s;
+  &:hover{
+    color: $color-primary;
+    background-color: #FFF;
+  }
+}
+
+.button-rounded{
+  border-radius: 100px;
+}
+
+.button-submit{
+  background-color: $color-submit;
+  font-size: 16px;
+  color: #FFF;
+  &:hover{
+    background-color: lighten($color-submit, 5);
+  }
+}

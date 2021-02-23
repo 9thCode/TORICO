@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.form-table{
+  width: 100%;
+  tr{
+    @include media(pc){
+      border-top: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+    }
+  }
+  th,td{
+    padding: 12px;
+    vertical-align: top;
+    @include media(sp){
+      display: block;
+    }
+  }
+  th{
+    text-align: left;
+    @include media(pc){
+      padding-top: 12px + 10px;
+      width: 17em;
+      background-color: #EFEFEF;
+    }
+    @include media(sp){
+      background-color: #EFEFEF;
+    }
+  }
+  td{
+    @include media(sp){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.form-footer{
+  margin-top: 1.5em;
+  text-align: center;
+  @include media(sp){
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}

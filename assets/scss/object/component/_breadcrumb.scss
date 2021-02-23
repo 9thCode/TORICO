@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+//
+// パンくずリスト
+//
+
+.breadcrumb{
+  ul{
+    overflow: hidden;
+    li{
+      float: left;
+      &:not(:first-child){
+        &:before{
+          content: ">";
+          display: inline-block;
+          margin-left: 0.5em;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}

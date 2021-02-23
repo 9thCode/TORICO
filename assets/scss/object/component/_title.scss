@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.title{
+  line-height: 1.25;
+  margin-bottom: 10px;
+  font-weight: 700;
+  @include media(sp){
+    margin-bottom: 5px;
+  }
+}
+
+.title-bar-contact{
+  color: #FFF;
+  background-color: $color-primary;
+  font-size: 1.4em;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  @include media(pc){
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+//
+// テキストの水平揃え
+//
+
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left!important;}
+
+@each $media in $medias {
+  @include media(#{$media}){
+    .text-center-#{$media}{text-align: center;}
+    .text-right-#{$media}{text-align: right;}
+    .text-left-#{$media}{text-align: left!important;}
+  }
+}
+
+.strong{
+  font-weight: 700;
+}
+
+.normal{
+  font-weight: 400;
+}
