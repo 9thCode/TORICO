@@ -2,151 +2,161 @@
   main
     .hero
       img(src="~/assets/images/top.jpg" alt="")
-    section.section.bg-white#concept
-      .container.container--single
-        .about-header
-          h2.title.about-title 地域の内と外をつなぐ<br>ローカルゲートウェイ
-        .about-content
-          p 日本海が一望できるオーシャンビューのカウンター席、グループ向けボックス席、利用者と交流できる共有テーブル、オンライン会議も気にせずできるプライベートルームを完備。また、地域の内と外をつなぐゲートウェイとして、地元経営者との交流の場やローカルな暮らしを体験できる場をコーディネートします。
-    section.section.bg-secondary#price
-      .section-header
-        h2.title.section-title 料金プラン
-        span.section-title--en PLAN
-      .container
-        .plan-row(v-inview:parent="'animate'")
-          .plan-box(:animate-toggle="'fadeInUp'")
-            .plan-box__header
-              h3.title.plan-title--box DROP IN
-              p 当日ご利用されたい方
-              span.pill-plain 月〜日 10:00〜20:00
-            .plan-box__content
-              .plan-content
-                h4.plan-content__title [1DAY利用プラン]
-                dl.plan-content__price
-                  dt 1,000
-                  dd / 日
-              .plan-content
-                h4.plan-content__title [ワーケーションプラン]
-                dl.plan-content__price
-                  dt 2,000
-                  dd / 日
-                ul.plan-content__caption
-                  li ①滞在中の地域活動・体験をサポート
-                  li ②地元住民との交流をコーディネート
-          .plan-box(:animate-toggle="'fadeInUp'")
-            .plan-box__header
-              h3.title.plan-title--box MONTHLY
-              p 月額でご利用されたい方
-              span.pill-plain 365日 24時間
-            .plan-box__content
-              .plan-content
-                h4.plan-content__title [個人会員プラン]
-                dl.plan-content__price
-                  dt 15,000
-                  dd / 月
-              .plan-content
-                h4.plan-content__title [法人会員プラン]
-                dl.plan-content__price
-                  dt 20,000
-                  dd / 月
-                ul.plan-content__caption
-                  li ※同じ会社・団体の方なら複数利用可
-          .plan-box(:animate-toggle="'fadeInUp'")
-            .plan-box__header
-              h3.title.plan-title--box CHALLENGE
-              p 起業やイベントをお考えの方
-              span.pill-plain 月〜日 10:00〜20:00
-            .plan-box__content
-              .plan-content
-                h4.plan-content__title [起業チャレンジプラン]
-                dl.plan-content__price
-                  dt 10,000
-                  dd / 月
-                ul.plan-content__caption
-                  li.text-center ※最大6ヶ月（それ以降は通常月額料金）
-              .plan-content
-                h4.plan-content__title [イベント貸切プラン]
-                dl.plan-content__price
-                  dt 20,000
-                  dd / 月
-                ul.plan-content__caption
-                  li.text-center ※6時間以降は2,000円/1h
-        .plan-row__footer
-          p: small ※料金は全て税別料金となります。
-        .plan-service
-          h3.title.service-title ご利用できるサービス
-          ul.service-list
-            li Wi-Fi
-            li 電源
-            li プロジェクター
-            li スクリーン
-            li 複合機
-            li 55インチモニター
-            li ホワイトボード
-            li シュレッダー
-            li オンライン会議
-            li プライベートルーム
-    section.section.bg-white#workspace
-      .section-header
-        h2.title.section-title ワークスペース
-        span.section-title--en WORK SPACE
-      .container
-        .workspace-gallery
-          .workspace-block
-            .workspace-block__photo: img(src="~/assets/images/counter.jpg" alt="カウンター席")
-            .workspace-block__content
-              .workspace__titlearea
-                span.pill-plain.workspace-pill カウンター席
-              p ちょっとしたお仕事やゆっくり読書などにもご利用できる、日本海を一望するオーシャンビューのカウンター席です。
-          .workspace-block
-            .workspace-block__photo: img(src="~/assets/images/box.jpg" alt="ボックス席")
-            .workspace-block__content
-              .workspace__titlearea
-                span.pill-plain.workspace-pill ボックス席
-              p 集中してお仕事したい時やグループミーティング・商談などにもご利用できるボックス席です。
-          .workspace-block
-            .workspace-block__photo: img(src="~/assets/images/table.jpg" alt="共有テーブル")
-            .workspace-block__content
-              .workspace__titlearea
-                span.pill-plain.workspace-pill 共有テーブル
-              p 利用者と交流できる共有テーブルです。人数の多い打ち合わせなどにもご利用できます。
-          .workspace-block
-            .workspace-block__photo: img(src="~/assets/images/private.jpg" alt="プライベートルーム")
-            .workspace-block__content
-              .workspace__titlearea
-                span.pill-plain.workspace-pill プライベートルーム
-              p 完全な個室なので、本格的な商談やオンライン会議など周りを気にせずご利用できるプライベートルームです。
-    section.section.bg-secondary#access
-      .section-header
-        h2.title.section-title アクセス
-        span.section-title--en ACCESS
-      .container
-        .access-panel
-          .access-panel__content
-            .access-panel__content--in
-              h3.title.access-title TORICO CREATIVE SPACE
-              .access-address
-                p: strong 〒689-3221<br>鳥取県西伯郡大山町富長159-1 BIKAI 2F
-              .access-time
-                p [営業時間 10:00〜20:00　不定休]
-              .access-detail
-                ul
-                  li JR名和駅（山陰本線）より徒歩9分
-                  li 米子駅より車で22分、電車で25分
-                  li 米子空港より車で35分
-              .access-footer
-                a(href="https://www.google.com/maps?ll=35.504267,133.486233&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=3258040530758892704" target="_blank").button.button-primary.button-rounded Googleマップを開く
-          .access-panel__map
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6496.0009196351375!2d133.48363085476973!3d35.50426685871722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d36e299d3b57ca0!2sTORICO!5e0!3m2!1sja!2sjp!4v1613991249115!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    section.section.bg-white#contact
-      .section-header
-        h2.title.section-title お問い合わせ
-        span.section-title--en CONTACT
-      .container.container-contact
-        .contact-intro
-          p 施設に関するご質問やご見学についてなど、お気軽にお問い合わせください。<br>運営会社である株式会社アマゾンラテルナ鳥取大山オフィスよりご連絡させていただきます。
-        .contact-main
-          TheContact
+    section.section.anchor#concept
+      .bg-white
+        .container.container--single
+          .about-header
+            h2.title.about-title 地域の内と外をつなぐ<br>ローカルゲートウェイ
+          .about-content
+            p 日本海が一望できるオーシャンビューのカウンター席、グループ向けボックス席、利用者と交流できる共有テーブル、オンライン会議も気にせずできるプライベートルームを完備。また、地域の内と外をつなぐゲートウェイとして、地元経営者との交流の場やローカルな暮らしを体験できる場をコーディネートします。
+    section.section.anchor#price
+      .bg-secondary
+        .section-header
+          h2.title.section-title 料金プラン
+          span.section-title--en PLAN
+        .container
+          .plan-row(v-inview:parent="'animate'")
+            .plan-box(:animate-toggle="'fadeInUp'")
+              .plan-box__header
+                h3.title.plan-title--box DROP IN
+                p 当日ご利用されたい方
+                span.pill-plain 月〜日 10:00〜20:00
+              .plan-box__content
+                .plan-content
+                  h4.plan-content__title [1DAY利用プラン]
+                  dl.plan-content__price
+                    dt 1,000
+                    dd / 日
+                .plan-content
+                  h4.plan-content__title [ワーケーションプラン]
+                  dl.plan-content__price
+                    dt 2,000
+                    dd / 日
+                  ul.plan-content__caption
+                    li ①滞在中の地域活動・体験をサポート
+                    li ②地元住民との交流をコーディネート
+            .plan-box(:animate-toggle="'fadeInUp'")
+              .plan-box__header
+                h3.title.plan-title--box MONTHLY
+                p 月額でご利用されたい方
+                span.pill-plain 365日 24時間
+              .plan-box__content
+                .plan-content
+                  h4.plan-content__title [個人会員プラン]
+                  dl.plan-content__price
+                    dt 15,000
+                    dd / 月
+                .plan-content
+                  h4.plan-content__title [法人会員プラン]
+                  dl.plan-content__price
+                    dt 20,000
+                    dd / 月
+                  ul.plan-content__caption
+                    li ※同じ会社・団体の方なら複数利用可
+            .plan-box(:animate-toggle="'fadeInUp'")
+              .plan-box__header
+                h3.title.plan-title--box CHALLENGE
+                p 起業やイベントをお考えの方
+                span.pill-plain 月〜日 10:00〜20:00
+              .plan-box__content
+                .plan-content
+                  h4.plan-content__title [起業チャレンジプラン]
+                  dl.plan-content__price
+                    dt 10,000
+                    dd / 月
+                  ul.plan-content__caption
+                    li.text-center ※最大6ヶ月（それ以降は通常月額料金）
+                .plan-content
+                  h4.plan-content__title [イベント貸切プラン]
+                  dl.plan-content__price
+                    dt 20,000
+                    dd / 月
+                  ul.plan-content__caption
+                    li.text-center ※6時間以降は2,000円/1h
+          .plan-row__footer
+            p: small ※料金は全て税別料金となります。
+          .plan-service
+            h3.title.service-title ご利用できるサービス
+            ul.service-list
+              li Wi-Fi
+              li 電源
+              li プロジェクター
+              li スクリーン
+              li 複合機
+              li 55インチモニター
+              li ホワイトボード
+              li シュレッダー
+              li オンライン会議
+              li プライベートルーム
+    section.section.anchor#workspace
+      .bg-white
+        .section-header
+          h2.title.section-title ワークスペース
+          span.section-title--en WORK SPACE
+        .container
+          .workspace-gallery
+            .workspace-block
+              .workspace-block__photo: img(src="~/assets/images/counter.jpg" alt="カウンター席")
+              .workspace-block__content
+                .workspace__titlearea
+                  span.pill-plain.workspace-pill カウンター席
+                p ちょっとしたお仕事やゆっくり読書などにもご利用できる、日本海を一望するオーシャンビューのカウンター席です。
+            .workspace-block
+              .workspace-block__photo: img(src="~/assets/images/box.jpg" alt="ボックス席")
+              .workspace-block__content
+                .workspace__titlearea
+                  span.pill-plain.workspace-pill ボックス席
+                p 集中してお仕事したい時やグループミーティング・商談などにもご利用できるボックス席です。
+            .workspace-block
+              .workspace-block__photo: img(src="~/assets/images/table.jpg" alt="ブース席")
+              .workspace-block__content
+                .workspace__titlearea
+                  span.pill-plain.workspace-pill ブース席
+                p フロントと両サイドが仕切られているので、周りを気にせず集中してお仕事や勉強ができる1人用の席です。
+            .workspace-block
+              .workspace-block__photo: img(src="~/assets/images/table.jpg" alt="共有テーブル")
+              .workspace-block__content
+                .workspace__titlearea
+                  span.pill-plain.workspace-pill 共有テーブル
+                p 利用者と交流できる共有テーブルです。人数の多い打ち合わせなどにもご利用できます。
+            .workspace-block
+              .workspace-block__photo: img(src="~/assets/images/private.jpg" alt="プライベートルーム")
+              .workspace-block__content
+                .workspace__titlearea
+                  span.pill-plain.workspace-pill プライベートルーム
+                p 完全な個室なので、本格的な商談やオンライン会議など周りを気にせずご利用できるプライベートルームです。
+    section#access.anchor.section
+      .bg-secondary
+        .section-header
+          h2.title.section-title アクセス
+          span.section-title--en ACCESS
+        .container
+          .access-panel
+            .access-panel__content
+              .access-panel__content--in
+                h3.title.access-title TORICO CREATIVE SPACE
+                .access-address
+                  p: strong 〒689-3221<br>鳥取県西伯郡大山町富長159-1 BIKAI 2F
+                .access-time
+                  p [営業時間 10:00〜20:00　不定休]
+                .access-detail
+                  ul
+                    li JR名和駅（山陰本線）より徒歩9分
+                    li 米子駅より車で22分、電車で25分
+                    li 米子空港より車で35分
+                .access-footer
+                  a(href="https://www.google.com/maps?ll=35.504267,133.486233&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=3258040530758892704" target="_blank").button.button-primary.button-rounded Googleマップを開く
+            .access-panel__map
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6496.0009196351375!2d133.48363085476973!3d35.50426685871722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d36e299d3b57ca0!2sTORICO!5e0!3m2!1sja!2sjp!4v1613991249115!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      section.section.bg-white#contact
+        .section-header
+          h2.title.section-title お問い合わせ
+          span.section-title--en CONTACT
+        .container.container-contact
+          .contact-intro
+            p 施設に関するご質問やご見学についてなど、お気軽にお問い合わせください。<br>運営会社である株式会社アマゾンラテルナ鳥取大山オフィスよりご連絡させていただきます。
+          .contact-main
+            TheContact
 </template>
 
 <script>
@@ -157,10 +167,10 @@ export default {
     return {
       meta: {
         title: 'TORICO - 大山町のコワーキングスペース',
-        description: 'ページ個別のディスクリプション',
+        description: '',
         type: 'website',
-        url: 'https://example.com/',
-        image: 'https://example.com/ogp.jpg',
+        url: 'https://torico-daisen.com/',
+        image: 'https://torico-daisen.com/ogp.jpg',
       },
     }
   },

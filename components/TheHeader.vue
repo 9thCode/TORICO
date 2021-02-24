@@ -31,30 +31,31 @@ header#header
         span.bars.bar-2
         span.bars.bar-3
     .nav-mobile(:class="(isActive === true) ? 'is-open' : ''")
-      ul.nav-mobile-list
-        li.nav-mobile-list__item
-          nuxt-link(v-scroll-to="'#concept'" to v-on:click.native="navToggle()")
-            span.nav-mobile-text.nav-mobile-text--ja コンセプト
-            span.nav-mobile-text.nav-mobile-text--en CONCEPT
-        li.nav-mobile-list__item
-          nuxt-link(v-scroll-to="'#price'" to v-on:click.native="navToggle()")
-            span.nav-mobile-text.nav-mobile-text--ja 料金プラン
-            span.nav-mobile-text.nav-mobile-text--en PLAN
-        li.nav-mobile-list__item
-          nuxt-link(v-scroll-to="'#workspace'" to v-on:click.native="navToggle()")
-            span.nav-mobile-text.nav-mobile-text--ja ワークスペース
-            span.nav-mobile-text.nav-mobile-text--en WORK SPACE
-        li.nav-mobile-list__item
-          nuxt-link(v-scroll-to="'#access'" to v-on:click.native="navToggle()")
-            span.nav-mobile-text.nav-mobile-text--ja アクセス
-            span.nav-mobile-text.nav-mobile-text--en ACCESS
-        li.nav-mobile-list__item
-          nuxt-link(v-scroll-to="'#contact'" to v-on:click.native="navToggle()").button.button-nav--main
-            span.nav-mobile-text.nav-mobile-text--ja お問い合わせ
-            span.nav-mobile-text.nav-mobile-text--en CONTACT
-      ul.nav-mobile-social
-        li: a(href="https://www.facebook.com/torico.daisen" target="_blank"): font-awesome-icon(:icon="['fab', 'facebook']")
-        li: a(href="https://www.instagram.com/torico.daisen/" target="_blank"): font-awesome-icon(:icon="['fab', 'instagram']")
+      .nav-mobile__wrap
+        ul.nav-mobile-list
+          li.nav-mobile-list__item
+            nuxt-link(v-scroll-to="'#concept'" to v-on:click.native="navToggle()")
+              span.nav-mobile-text.nav-mobile-text--ja コンセプト
+              span.nav-mobile-text.nav-mobile-text--en CONCEPT
+          li.nav-mobile-list__item
+            nuxt-link(v-scroll-to="'#price'" to v-on:click.native="navToggle()")
+              span.nav-mobile-text.nav-mobile-text--ja 料金プラン
+              span.nav-mobile-text.nav-mobile-text--en PLAN
+          li.nav-mobile-list__item
+            nuxt-link(v-scroll-to="'#workspace'" to v-on:click.native="navToggle()")
+              span.nav-mobile-text.nav-mobile-text--ja ワークスペース
+              span.nav-mobile-text.nav-mobile-text--en WORK SPACE
+          li.nav-mobile-list__item
+            nuxt-link(v-scroll-to="'#access'" to v-on:click.native="navToggle()")
+              span.nav-mobile-text.nav-mobile-text--ja アクセス
+              span.nav-mobile-text.nav-mobile-text--en ACCESS
+          li.nav-mobile-list__item
+            nuxt-link(v-scroll-to="'#contact'" to v-on:click.native="navToggle()").button.button-nav--main
+              span.nav-mobile-text.nav-mobile-text--ja お問い合わせ
+              span.nav-mobile-text.nav-mobile-text--en CONTACT
+        ul.nav-mobile-social
+          li: a(href="https://www.facebook.com/torico.daisen" target="_blank"): font-awesome-icon(:icon="['fab', 'facebook']")
+          li: a(href="https://www.instagram.com/torico.daisen/" target="_blank"): font-awesome-icon(:icon="['fab', 'instagram']")
 </template>
 
 <script>
@@ -97,7 +98,7 @@ export default {
       this.scrollY = window.scrollY
       targets.forEach((target, index) => {
         const element = document.getElementById(target)
-        const offsetTop = Math.round(window.scrollY + element.getBoundingClientRect().top - 100)
+        const offsetTop = Math.round(window.scrollY + element.getBoundingClientRect().top)
         this.sectionOffsetTop[index] = offsetTop;
       })
     }
@@ -179,7 +180,8 @@ export default {
       justify-content: center;
       height: 100px;
       position: relative;
-      &.is-active{
+      &.is-active,
+      &:hover{
         &:before{
           content: "";
           position: absolute;
@@ -288,9 +290,11 @@ export default {
   background-color: #000;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
   top: -100%;
   transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include media(md-lg){
     display: none;
   }
@@ -300,10 +304,11 @@ export default {
   }
 
   &-list{
+    margin-top: -1.2em;
     &__item{
       text-align: center;
-      margin-top: 2em;
-      margin-bottom: 2em;
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
     }
   }
 
