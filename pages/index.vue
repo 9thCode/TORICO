@@ -108,13 +108,13 @@
                   span.pill-plain.workspace-pill ボックス席
                 p 集中してお仕事したい時やグループミーティング・商談などにもご利用できるボックス席です。
             .workspace-block
-              .workspace-block__photo: img(src="~/assets/images/table.jpg" alt="ブース席")
+              .workspace-block__photo: img(src="~/assets/images/booth.jpg" alt="ブース席")
               .workspace-block__content
                 .workspace__titlearea
                   span.pill-plain.workspace-pill ブース席
                 p フロントと両サイドが仕切られているので、周りを気にせず集中してお仕事や勉強ができる1人用の席です。
             .workspace-block
-              .workspace-block__photo: img(src="~/assets/images/table.jpg" alt="共有テーブル")
+              .workspace-block__photo: img(src="~/assets/images/shared_table.jpg" alt="共有テーブル")
               .workspace-block__content
                 .workspace__titlearea
                   span.pill-plain.workspace-pill 共有テーブル
