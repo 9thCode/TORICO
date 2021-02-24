@@ -3,7 +3,7 @@ div
   dl.contact-dl
     dt お問い合わせ内容
     dd
-      select.input-full
+      select.input-full( v-model="formData.yourTitle")
         option(value="料金プランについて") 料金プランについて
         option(value="ワーケーションについて") ワーケーションについて
         option(value="イベント利用について") イベント利用について
@@ -12,31 +12,31 @@ div
     dt お名前
       span.color-required *
     dd
-      input(type="text").input-full
+      input(type="text" v-model="formData.yourName").input-full
   dl.contact-dl
     dt ふりがな
       span.color-required *
     dd
-      input(type="text").input-full
+      input(type="text" v-model="formData.yourFurigana").input-full
   dl.contact-dl
     dt 会社名 / ご所属
     dd
-      input(type="text").input-full
+      input(type="text" v-model="formData.yourCompany").input-full
   dl.contact-dl
     dt メールアドレス
       span.color-required *
     dd
-      input(type="email").input-full
+      input(type="email" v-model="formData.yourEmail").input-full
   dl.contact-dl
     dt 電話番号
       span.color-required *
     dd
-      input(type="tel").input-full
+      input(type="tel" v-model="formData.yourTel").input-full
   dl.contact-dl
     dt お問い合わせ内容
       span.color-required *
     dd
-      textarea(rows="7").input-full
+      textarea(rows="7" v-model="formData.yourContent").input-full
   .form-acceptance
     label.label-checkbox(:class="(formData.acceptance === true) ? 'checked' : ''")
       input(type="checkbox" v-model="formData.acceptance")
@@ -53,6 +53,13 @@ export default {
   data(){
     return {
       formData: {
+        yourTitle: '',
+        yourName: '',
+        yourFurigana: '',
+        yourCompany: '',
+        yourEmail: '',
+        yourTel: '',
+        yourContent: '',
         acceptance: false
       }
     }
@@ -69,6 +76,21 @@ export default {
   }
   dd{
 
+  }
+
+  input{
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 13px 10px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    &:focus{
+      background-color: lighten(#FFEFBF,8);
+      box-shadow: 0 0 3px rgba(#73B9FF,0.8);
+    }
   }
 }
 

@@ -17,65 +17,16 @@
 // layout
 ////////////////////////////////////
 
-.container{
-  max-width: 1200px + 40px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  @include media(sm){
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  &--single{
-    max-width: 1000px + 40px;
-  }
-  
-  &.full-sm{
-    @include media(sm){
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
-
-.bg-white{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  @include media(md){
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @include media(lg){
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
-.bg-secondary{
-  @extend .bg-white;
-  background-color: #f3f3f3;
-}
 
 ////////////////////////////////////
 // components
 ////////////////////////////////////
 
-// @import "object/component/grid";
-// @import "object/component/breadcrumb";
+@import "object/component/grid";
 @import "object/component/title";
-// @import "object/component/lead";
-// @import "object/component/list";
-// @import "object/component/link";
-// @import "object/component/table";
 @import "object/component/button";
 // @import "object/component/line";
-// @import "object/component/card";
 @import "object/component/form";
-// @import "object/component/form_layout";
-// @import "object/component/modal";
-// @import "object/component/slider";
 // @import "object/component/test";
 
 
@@ -84,7 +35,6 @@
 ////////////////////////////////////
 
 // @import "object/project/home";
-// @import "object/project/page";
 
 ////////////////////////////////////
 // helpers
