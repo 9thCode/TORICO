@@ -148,15 +148,16 @@
                   a(href="https://www.google.com/maps?ll=35.504267,133.486233&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=3258040530758892704" target="_blank").button.button-primary.button-rounded Googleマップを開く
             .access-panel__map
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6496.0009196351375!2d133.48363085476973!3d35.50426685871722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d36e299d3b57ca0!2sTORICO!5e0!3m2!1sja!2sjp!4v1613991249115!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      section.section.bg-white#contact
-        .section-header
-          h2.title.section-title お問い合わせ
-          span.section-title--en CONTACT
-        .container.container-contact
-          .contact-intro
-            p 施設に関するご質問やご見学についてなど、お気軽にお問い合わせください。<br>運営会社である株式会社アマゾンラテルナ鳥取大山オフィスよりご連絡させていただきます。
-          .contact-main
-            TheContact
+      section.section#contact
+        .bg-white
+          .section-header
+            h2.title.section-title お問い合わせ
+            span.section-title--en CONTACT
+          .container.container-contact
+            .contact-intro
+              p 施設に関するご質問やご見学についてなど、お気軽にお問い合わせください。<br>運営会社である株式会社アマゾンラテルナ鳥取大山オフィスよりご連絡させていただきます。
+            .contact-main
+              TheContact
 </template>
 
 <script>
