@@ -16,7 +16,7 @@
           span.section-title--en PLAN
         .container
           .plan-row(v-inview:parent="'animate'")
-            .plan-box(:animate-toggle="'fadeInUp'")
+            .plan-box(:animate-toggle="'plan-box-animate'")
               .plan-box__header
                 h3.title.plan-title--box DROP IN
                 p 当日ご利用されたい方
@@ -35,7 +35,7 @@
                   ul.plan-content__caption
                     li ①滞在中の地域活動・体験をサポート
                     li ②地元住民との交流をコーディネート
-            .plan-box(:animate-toggle="'fadeInUp'")
+            .plan-box(:animate-toggle="'plan-box-animate'")
               .plan-box__header
                 h3.title.plan-title--box MONTHLY
                 p 月額でご利用されたい方
@@ -53,7 +53,7 @@
                     dd / 月
                   ul.plan-content__caption
                     li ※同じ会社・団体の方なら複数利用可
-            .plan-box(:animate-toggle="'fadeInUp'")
+            .plan-box(:animate-toggle="'plan-box-animate'")
               .plan-box__header
                 h3.title.plan-title--box CHALLENGE
                 p 起業やイベントをお考えの方

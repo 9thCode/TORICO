@@ -180,18 +180,25 @@ export default {
       justify-content: center;
       height: 100px;
       position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        display: block;
+        position: absolute;
+        width: calc(100% - 1em);
+        bottom: 0;
+        left: 0.5em;
+        height: 8px;
+        background-color: #0068b7;
+        transform: scale(0, 1);
+        opacity: 0;
+        transition: all linear 0.1s;
+      }
       &.is-active,
       &:hover{
         &:before{
-          content: "";
-          position: absolute;
-          display: block;
-          position: absolute;
-          width: calc(100% - 1em);
-          bottom: 0;
-          left: 0.5em;
-          height: 8px;
-          background-color: #0068b7;
+          transform: scale(1);
+          opacity: 1;
         }
       }
     }
