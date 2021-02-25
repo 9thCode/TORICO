@@ -70,7 +70,7 @@
                   h4.plan-content__title [イベント貸切プラン]
                   dl.plan-content__price
                     dt 20,000
-                    dd / 月
+                    dd / 6h
                   ul.plan-content__caption
                     li.text-center ※6時間以降は2,000円/1h
           .plan-row__footer
