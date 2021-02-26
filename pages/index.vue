@@ -1,7 +1,7 @@
 <template lang="pug">
   main
     .hero
-      img(src="~/assets/images/top.jpg" alt="")
+      img(src="~/assets/images/top.jpg" alt="" decoding="async")
     section.section.anchor#concept
       .bg-white
         .container.container--single
