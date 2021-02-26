@@ -157,7 +157,7 @@
             .contact-intro
               p 施設に関するご質問やご見学についてなど、お気軽にお問い合わせください。<br>運営会社である株式会社アマゾンラテルナ鳥取大山オフィスよりご連絡させていただきます。
             .contact-main
-              TheContact
+              TheContact(formid="5")
 </template>
 
 <script>

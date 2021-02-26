@@ -29,7 +29,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/vue-scrollto',
-    '~plugins/inview'
+    '~plugins/inview',
+    '~plugins/vee-validate'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -42,12 +43,23 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'vue-scrollto/nuxt'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: [
+      "vee-validate/dist/rules"
+    ]
+  },
+
+  env: {
+    WP_REST_API_BASE_URL: process.env.WP_REST_API_BASE_URL,
+    WPUSER: process.env.WPUSER,
+    APPLICATION_PASSWORD: process.env.APPLICATION_PASSWORD
   },
 
   styleResources: {
