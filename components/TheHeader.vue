@@ -2,7 +2,7 @@
 header#header
   //- |{{ $data }}
   .container.header-container
-    .header-logo: nuxt-link(to="/"): img(src="~/assets/images/logo.svg" alt="TORICO" width="140")
+    .header-logo: nuxt-link(v-scroll-to="'#__nuxt'" to): img(src="~/assets/images/logo.svg" alt="TORICO" width="140")
     nav.header-nav
       ul.header-nav-list
         li.header-nav-list__item

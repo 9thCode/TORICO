@@ -2,7 +2,7 @@
 footer#footer
   .container.footer-container
     .footer-info
-      .footer-logo: nuxt-link(to="/"): img(src="~/assets/images/logo.svg" alt="" width="140")
+      .footer-logo: nuxt-link(v-scroll-to="'#__nuxt'" to): img(src="~/assets/images/logo.svg" alt="" width="140")
       .footer-content
         address.footer-address 〒689-3221 鳥取県西伯郡大山町富長159-1 BIKAI 2F
         .footer-tel

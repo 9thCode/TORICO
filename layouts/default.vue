@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-body{
+#__nuxt{
   padding-top: 100px;
   @include media(sm){
     padding-top: 60px;
