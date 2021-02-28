@@ -108,7 +108,7 @@ export default {
         console.log(response)
         this.responseData = response.data
         this.submitBlind = true
-        this.$router.push(THNAKSURL)
+        alert('送信が完了しました。回答までお待ちいただきますよう、お願い致します。');
       })
       .catch(error => {
         console.log(error)

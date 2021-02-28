@@ -167,8 +167,8 @@ export default {
   data () {
     return {
       meta: {
-        title: 'TORICO - 大山町のコワーキングスペース',
-        description: '',
+        title: 'TORICO | 海の見えるコワーキングスペース',
+        description: '鳥取県大山町にあるコワーキングスペースTORICO（トリコ）。地方と都会をつなぐゲートウェイとして、経営者やクリエイターとの交流やローカルな暮らしを体験できる場所です。',
         type: 'website',
         url: 'https://torico-daisen.com/',
         image: 'https://torico-daisen.com/ogp.jpg',
