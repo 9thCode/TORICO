@@ -74,7 +74,7 @@
                   ul.plan-content__caption
                     li.text-center ※6時間以降は2,200円/1h
           .plan-row__footer
-            p: small ※料金は全て税別料金となります。
+            p: small ※料金はすべて税込です。
           .plan-service
             h3.title.service-title ご利用できるサービス
             ul.service-list
