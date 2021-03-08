@@ -25,14 +25,16 @@
                 .plan-content
                   h4.plan-content__title [1DAY利用プラン]
                   dl.plan-content__price
-                    dt 1,100
-                      span.unit-currency 円
+                    dt
+                      span.unit-currency ￥
+                      |1,100
                     dd / 日
                 .plan-content
                   h4.plan-content__title [ワーケーションプラン]
                   dl.plan-content__price
-                    dt 2,200
-                      span.unit-currency 円
+                    dt
+                      span.unit-currency ￥
+                      |2,200
                     dd / 日
                   ul.plan-content__caption
                     li ①滞在中の地域活動・体験をサポート
@@ -46,14 +48,16 @@
                 .plan-content
                   h4.plan-content__title [個人会員プラン]
                   dl.plan-content__price
-                    dt 16,500
-                      span.unit-currency 円
+                    dt
+                      span.unit-currency ￥
+                      |16,500
                     dd / 月
                 .plan-content
                   h4.plan-content__title [法人会員プラン]
                   dl.plan-content__price
-                    dt 22,000
-                      span.unit-currency 円
+                    dt
+                      span.unit-currency ￥
+                      |22,000
                     dd / 月
                   ul.plan-content__caption
                     li ※同じ会社・団体の方なら複数利用可
@@ -66,20 +70,21 @@
                 .plan-content
                   h4.plan-content__title [起業チャレンジプラン]
                   dl.plan-content__price
-                    dt 11,000
-                      span.unit-currency 円
+                    dt
+                      span.unit-currency ￥
+                      |11,000
                     dd / 月
                   ul.plan-content__caption
                     li.text-center ※最大6ヶ月（それ以降は通常月額料金）
                 .plan-content
                   h4.plan-content__title [イベント貸切プラン]
                   dl.plan-content__price
-                    dt 22,000
-                      span.unit-currency 円
+                    dt
+                      span.unit-currency ￥
+                      |22,000
                     dd / 6h
                   ul.plan-content__caption
-                    li.text-center ※6時間以降は2,200
-                      span.unit-currency 円/1h
+                    li.text-center ※6時間以降は￥2,200 /1h
           .plan-row__footer
             p: small ※料金はすべて税込です。
           .plan-service
@@ -359,8 +364,7 @@ export default {
 
 .unit-currency{
   display: inline-block;
-  font-size: 25px;
-  margin-left: 0.3em;
+  // margin-right: 0.3em;
 }
 
 // plan - service
