@@ -25,12 +25,12 @@
                 .plan-content
                   h4.plan-content__title [1DAY利用プラン]
                   dl.plan-content__price
-                    dt 1,000
+                    dt 1,100
                     dd / 日
                 .plan-content
                   h4.plan-content__title [ワーケーションプラン]
                   dl.plan-content__price
-                    dt 2,000
+                    dt 2,200
                     dd / 日
                   ul.plan-content__caption
                     li ①滞在中の地域活動・体験をサポート
@@ -44,12 +44,12 @@
                 .plan-content
                   h4.plan-content__title [個人会員プラン]
                   dl.plan-content__price
-                    dt 15,000
+                    dt 16,500
                     dd / 月
                 .plan-content
                   h4.plan-content__title [法人会員プラン]
                   dl.plan-content__price
-                    dt 20,000
+                    dt 22,000
                     dd / 月
                   ul.plan-content__caption
                     li ※同じ会社・団体の方なら複数利用可
@@ -62,17 +62,17 @@
                 .plan-content
                   h4.plan-content__title [起業チャレンジプラン]
                   dl.plan-content__price
-                    dt 10,000
+                    dt 11,000
                     dd / 月
                   ul.plan-content__caption
                     li.text-center ※最大6ヶ月（それ以降は通常月額料金）
                 .plan-content
                   h4.plan-content__title [イベント貸切プラン]
                   dl.plan-content__price
-                    dt 20,000
+                    dt 22,000
                     dd / 6h
                   ul.plan-content__caption
-                    li.text-center ※6時間以降は2,000円/1h
+                    li.text-center ※6時間以降は2,200円/1h
           .plan-row__footer
             p: small ※料金は全て税別料金となります。
           .plan-service(v-inview:animate="'on'")
