@@ -14,8 +14,7 @@
     "nuxt": "^2.14.12",
     "reset.css": "^2.0.2",
     "vee-validate": "^3.4.5",
-    "vue-scrollto": "^2.20.0",
-    "vueinview": "^1.0.7"
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.2",

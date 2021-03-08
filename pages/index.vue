@@ -16,7 +16,7 @@
           span.section-title--en PLAN
         .container
           .plan-row
-            .plan-box(v-inview:animate="'on'")
+            .plan-box
               .plan-box__header
                 h3.title.plan-title--box DROP IN
                 p 当日ご利用されたい方
@@ -35,7 +35,7 @@
                   ul.plan-content__caption
                     li ①滞在中の地域活動・体験をサポート
                     li ②地元住民との交流をコーディネート
-            .plan-box(v-inview:animate="'on'")
+            .plan-box
               .plan-box__header
                 h3.title.plan-title--box MONTHLY
                 p 月額でご利用されたい方
@@ -53,7 +53,7 @@
                     dd / 月
                   ul.plan-content__caption
                     li ※同じ会社・団体の方なら複数利用可
-            .plan-box(v-inview:animate="'on'")
+            .plan-box
               .plan-box__header
                 h3.title.plan-title--box CHALLENGE
                 p 起業やイベントをお考えの方
@@ -75,7 +75,7 @@
                     li.text-center ※6時間以降は2,200円/1h
           .plan-row__footer
             p: small ※料金は全て税別料金となります。
-          .plan-service(v-inview:animate="'on'")
+          .plan-service
             h3.title.service-title ご利用できるサービス
             ul.service-list
               li Wi-Fi
@@ -95,31 +95,31 @@
           span.section-title--en WORK SPACE
         .container
           .workspace-gallery
-            .workspace-block(v-inview:animate="'on'")
+            .workspace-block
               .workspace-block__photo: img(src="~/assets/images/counter.jpg" alt="カウンター席")
               .workspace-block__content
                 .workspace__titlearea
                   span.pill-plain.workspace-pill カウンター席
                 p ちょっとしたお仕事やゆっくり読書などにもご利用できる、日本海を一望するオーシャンビューのカウンター席です。
-            .workspace-block(v-inview:animate="'on'")
+            .workspace-block
               .workspace-block__photo: img(src="~/assets/images/box.jpg" alt="ボックス席")
               .workspace-block__content
                 .workspace__titlearea
                   span.pill-plain.workspace-pill ボックス席
                 p 集中してお仕事したい時やグループミーティング・商談などにもご利用できるボックス席です。
-            .workspace-block(v-inview:animate="'on'")
+            .workspace-block
               .workspace-block__photo: img(src="~/assets/images/booth.jpg" alt="ブース席")
               .workspace-block__content
                 .workspace__titlearea
                   span.pill-plain.workspace-pill ブース席
                 p フロントと両サイドが仕切られているので、周りを気にせず集中してお仕事や勉強ができる1人用の席です。
-            .workspace-block(v-inview:animate="'on'")
+            .workspace-block
               .workspace-block__photo: img(src="~/assets/images/shared_table.jpg" alt="共有テーブル")
               .workspace-block__content
                 .workspace__titlearea
                   span.pill-plain.workspace-pill 共有テーブル
                 p 利用者と交流できる共有テーブルです。人数の多い打ち合わせなどにもご利用できます。
-            .workspace-block(v-inview:animate="'on'")
+            .workspace-block
               .workspace-block__photo: img(src="~/assets/images/private.jpg" alt="プライベートルーム")
               .workspace-block__content
                 .workspace__titlearea
@@ -130,7 +130,7 @@
         .section-header
           h2.title.section-title アクセス
           span.section-title--en ACCESS
-        .container.access-wrap(v-inview:animate="'on'")
+        .container.access-wrap
           .access-panel
             .access-panel__content
               .access-panel__content--in
@@ -153,7 +153,7 @@
           .section-header
             h2.title.section-title お問い合わせ
             span.section-title--en CONTACT
-          .container.container-contact.contact-wrap(v-inview:animate="'on'")
+          .container.container-contact.contact-wrap
             .contact-intro
               p 施設に関するご質問やご見学についてなど、お気軽にお問い合わせください。<br>運営会社である株式会社アマゾンラテルナ鳥取大山オフィスよりご連絡させていただきます。
             .contact-main
@@ -516,6 +516,6 @@ export default {
 }
 
 // animations
-@import "~assets/scss/object/component/animate";
+// @import "~assets/scss/object/component/animate";
 
 </style>
