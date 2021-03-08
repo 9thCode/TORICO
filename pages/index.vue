@@ -26,11 +26,13 @@
                   h4.plan-content__title [1DAY利用プラン]
                   dl.plan-content__price
                     dt 1,100
+                      span.unit-currency 円
                     dd / 日
                 .plan-content
                   h4.plan-content__title [ワーケーションプラン]
                   dl.plan-content__price
                     dt 2,200
+                      span.unit-currency 円
                     dd / 日
                   ul.plan-content__caption
                     li ①滞在中の地域活動・体験をサポート
@@ -45,11 +47,13 @@
                   h4.plan-content__title [個人会員プラン]
                   dl.plan-content__price
                     dt 16,500
+                      span.unit-currency 円
                     dd / 月
                 .plan-content
                   h4.plan-content__title [法人会員プラン]
                   dl.plan-content__price
                     dt 22,000
+                      span.unit-currency 円
                     dd / 月
                   ul.plan-content__caption
                     li ※同じ会社・団体の方なら複数利用可
@@ -63,6 +67,7 @@
                   h4.plan-content__title [起業チャレンジプラン]
                   dl.plan-content__price
                     dt 11,000
+                      span.unit-currency 円
                     dd / 月
                   ul.plan-content__caption
                     li.text-center ※最大6ヶ月（それ以降は通常月額料金）
@@ -70,9 +75,11 @@
                   h4.plan-content__title [イベント貸切プラン]
                   dl.plan-content__price
                     dt 22,000
+                      span.unit-currency 円
                     dd / 6h
                   ul.plan-content__caption
-                    li.text-center ※6時間以降は2,200円/1h
+                    li.text-center ※6時間以降は2,200
+                      span.unit-currency 円/1h
           .plan-row__footer
             p: small ※料金はすべて税込です。
           .plan-service
@@ -348,6 +355,12 @@ export default {
     font-size: 14px;
     text-align: center;
   }
+}
+
+.unit-currency{
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 0.3em;
 }
 
 // plan - service
