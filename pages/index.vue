@@ -150,7 +150,8 @@
                 .access-address
                   p: strong 〒689-3221<br>鳥取県西伯郡大山町富長159-1 BIKAI 2F
                 .access-time
-                  p [営業時間 10:00〜20:00　不定休]
+                  p.mb0 [営業時間 平日 10:00〜20:00]<br>
+                  p.small 土日祝は原則月額会員のみ<br>※土日祝にイベントやドロップインをご希望の方は、<br>事前にお問い合わせフォームよりご相談ください。
                 .access-detail
                   ul
                     li JR名和駅（山陰本線）より徒歩9分
@@ -473,9 +474,6 @@ export default {
       padding-top: 30px;
       padding-bottom: 30px;
     }
-
-    &--in{
-    }
   }
 
   &__map{
@@ -504,6 +502,15 @@ export default {
 
 .access-time{
   font-size: 19px;
+}
+
+.mb0{
+  margin-bottom: 0;
+}
+
+.small{
+  font-size: 0.8em;
+  line-height: 1.8;
 }
 
 .access-detail{
