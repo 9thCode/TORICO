@@ -9,7 +9,7 @@ footer#footer
           dl.footer-tel__dl
             dt TEL
             dd 0859-54-3785<br>
-          span.footer-tel__caption ご予約やご利用・ワーケーションについては、お問い合わせフォームよりご相談ください。
+          span.footer-tel__caption ご予約やご利用・ワーケーションについては、お問い合わせ<br class="hide-sm hide-md">フォームよりご相談ください。
         .footer-sns
           ul.footer-sns__list
             li: a(href="https://www.facebook.com/torico.daisen" target="_blank"): font-awesome-icon(:icon="['fab', 'facebook']")
@@ -94,7 +94,12 @@ footer#footer
   }
 
   &__caption{
-    font-size: 0.9em;
+    display: block;
+    font-size: 0.87em;
+    line-height: 1.5;
+    @include media(sm){
+      margin-top: 5px;
+    }
   }
 }
 
