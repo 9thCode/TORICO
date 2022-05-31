@@ -20,7 +20,7 @@
               .plan-box__header
                 h3.title.plan-title--box DROP IN
                 p 当日ご利用されたい方
-                span.pill-plain 月〜日 10:00〜20:00
+                span.pill-plain 平日 10:00〜20:00
               .plan-box__content
                 .plan-content
                   h4.plan-content__title [1DAY利用プラン]
@@ -151,7 +151,7 @@
                   p: strong 〒689-3221<br>鳥取県西伯郡大山町富長159-1 BIKAI 2F
                 .access-time
                   p.mb0 [営業時間 平日 10:00〜20:00]<br>
-                  p.small 土日祝は原則月額会員のみ<br>※土日祝にイベントやドロップインをご希望の方は、<br class="hide-sm hide-md">事前にお問い合わせフォームよりご相談ください。
+                  p.small 月額会員の方は、土日祝もご自由にご利用いただけます。<br>※土日祝にイベントやドロップインをご希望の方は、<br class="hide-sm hide-md">事前にお問い合わせフォームよりご相談ください。
                 .access-detail
                   ul
                     li JR名和駅（山陰本線）より徒歩9分
